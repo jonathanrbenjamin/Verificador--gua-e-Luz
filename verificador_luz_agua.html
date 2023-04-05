@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modelo de Exercício</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <body onload="carregar()">
+            <header>
+                <h1>Hora do Dia</h1>
+        
+            </header>
+            <section>
+                <div id="msg">
+                    <p>Aqui vai aparecer a em...</p>
+                    
+        
+                </div>
+        
+                <div id="foto">
+                    <img id="imagem" src="img/manha.png" alt="Foto do dia">
+                    
+        
+                </div>
+        
+            </section>
+        <header>
+            <h1>Verificador</h1>
+
+        </header>
+        <section>
+            <div>
+                <p>Luz:
+                    <input type="number" name="txtluz" id="txtluz" min="0">
+                </p>
+                <p>Água:
+                    <input type="number" name="txtagua" id="txtagua" min="0">
+                </p>
+                <p>Casa
+                    <input type="radio" name="radsex" id="leo" checked>
+                    <label for="leo">Leonilda</label>
+
+                    <input type="radio" name="radsex" id="jac">
+                    <label for="jac">Jaqueline</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar"
+                        onclick="somar()">
+                </div>
+
+                <div id="res">
+                    Preencha os dados acima para ver o resultado!
+                </div>
+
+                <script>
+
+                function carregar() {
+    var msg = window.document.getElementById('msg')
+    var img = window.document.getElementById('imagem')
+    var data = new Date()
+    var hora = data.getHours()
+
+    msg.innerHTML = `Agora são ${hora} horas.`
+    if (hora >= 0 && hora < 12) {
+        img.src = 'img/manha.png'
+        document.body.style.background = '#e2cd9f'
+        
+    } else if (hora >= 12 && hora <= 18) {
+        // BOA TARDE!
+        img.src = 'img/tarde.png'
+        document.body.style.background = '#b9846f'
+
+    } else {
+        // BOA NOITE!
+        img.src = 'img/noite.png'
+        document.body.style.background = '#515154'
+
+    }
+
+}
+
+            function somar() {
+                var luz = window.document.getElementById('txtluz')
+                var agua = window.document.getElementById('txtagua')
+                var res = window.document.getElementById('res')
+                var fsex = document.getElementsByName('radsex')
+                var luz = Number(luz.value)
+                var agua = Number(agua.value)
+                
+                
+                if (fsex[0].checked) {
+                    var luz = luz / 5
+                    var agua = agua / 9
+                    var s = luz*2 + agua*2
+
+                } else if (fsex[1].checked) {
+                    var luz = luz / 5
+                    var agua = agua / 9
+                    var s = luz*3 + agua*3
+                }
+                res.innerHTML = `A soma entre luz e água é igual a <strong>${s}</strong>`
+
+            }
+                            
+            </script>
+            </body>
+        </html>

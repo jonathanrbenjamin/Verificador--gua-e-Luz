@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(140, 140, 236);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.445);
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+
+    body {
+        font: normal 10pt Arial
+
+    }
+
+    #imagem {
+        margin-left: -4.5%;
+
+    }
+        
+    section {
+        width: 80%;
+    }
+  
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font: normal 10pt Arial
+
+    }
+        
+    section {
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        font: normal 10pt Arial
+
+    }
+        
+    section {
+        width: 80%;
+    }
+
+    
+}
