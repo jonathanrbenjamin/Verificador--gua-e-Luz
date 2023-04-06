@@ -23,7 +23,7 @@ p {
 
 #inp {
     width: 100px;
-    font: Normal 20pt Arial;
+    font: Normal 15pt Arial;
     padding: 10px;
     margin: 10px;
     font-weight: bold;    
@@ -32,6 +32,14 @@ p {
 div {
     text-align: center;
     padding: 8px;
+}
+
+#ver {
+    width: 100px;
+    font: Normal 15pt Arial;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold; 
 }
 
 footer {
@@ -52,9 +60,16 @@ footer {
         width: 80px;
     }
 
-    section div p {
+    #casa2 {
         font-size: 15px;
+        margin: -5px;
+        margin-top: 5px;
+        
 
+    }
+
+    section p {
+        margin: 0;
     }
     
     

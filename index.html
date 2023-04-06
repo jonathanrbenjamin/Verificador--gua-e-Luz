@@ -40,12 +40,21 @@
                             min="0">
                     </p>
 
-                    <p>Casa
+                    <p>Casa 1
                         <input type="radio" name="radsex" id="leo" checked>
                         <label for="leo">Leonilda</label>
                         <input type="radio" name="radsex" id="jac">
                         <label for="jac">Jaqueline</label>
                     </p>
+
+                    <p id="casa2">Casa 2*
+                        <input type="radio" name="radsex" id="Jon" checked>
+                        <label for="leo">Jonathan</label>
+                        <input type="radio" name="radsex" id="Aug">
+                        <label for="jac">Augusto</label>
+                    </p>
+                    <h6>*mudar o valor da conta de luz</h6>
+
 
                     <p>
                         <input id="ver" type="button" value="Verificar"
@@ -102,10 +111,22 @@
                     var luz = luz / 4
                     var agua = agua / 9
                     var s = (luz*2 + agua*3).toFixed(2)
+                }
+
+                  else if (fsex[2].checked) {
+                    var luz = luz / 4
+                    var agua = agua / 9
+                    var s = (luz*2 + agua*2).toFixed(2)
+                    
+                
+                } else if (fsex[3].checked) {
+                    var luz = luz / 4
+                    var agua = agua / 9
+                    var s = (luz*2 + agua*2).toFixed(2)
                                         
                 }
                     
-                    res.innerHTML = `A soma do valor da conta de água dividido por 9 pessoas e conta de luz divido por 4 pessoas é: <strong>R$${s}</strong>`
+                    res.innerHTML = `A soma dos valores entre luz e água, divididos por 4 e 9 pessoas, respectivamente, é: <strong>R$${s}</strong>`
                                 
                 }
                             
