@@ -36,7 +36,7 @@
                         <input id="inp" type="number" name="txtluz" id="txtluz" min="0">
                     </p>
                     <p>Água:
-                        <input id="inp" type="number" name="txtagua" id="txtagua"
+                        <input id="inp2" type="number" name="txtagua" id="txtagua"
                             min="0">
                     </p>
 
@@ -49,9 +49,9 @@
 
                     <p id="casa2">Casa 2*
                         <input type="radio" name="radsex" id="Jon" checked>
-                        <label for="leo">Jonathan</label>
+                        <label for="Jon">Jonathan</label>
                         <input type="radio" name="radsex" id="Aug">
-                        <label for="jac">Augusto</label>
+                        <label for="Aug">Augusto</label>
                     </p>
                     <h6>*mudar o valor da conta de luz</h6>
 
@@ -95,7 +95,7 @@
                 
                 function somar() {
                 var luz = window.document.getElementById('inp')
-                var agua = window.document.getElementById('inp')
+                var agua = window.document.getElementById('inp2')
                 var res = window.document.getElementById('res')
                 var fsex = document.getElementsByName('radsex')
                 var luz = Number(luz.value)
@@ -117,6 +117,7 @@
                     var luz = luz / 4
                     var agua = agua / 9
                     var s = (luz*2 + agua*2).toFixed(2)
+
                     
                 
                 } else if (fsex[3].checked) {
