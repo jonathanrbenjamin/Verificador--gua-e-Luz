@@ -17,6 +17,18 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.445);
 }
 
+p {
+    font: normal 15pt Arial;
+}
+
+#inp {
+    width: 100px;
+    font: Normal 20pt Arial;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;    
+}
+
 div {
     text-align: center;
     padding: 8px;
@@ -28,45 +40,69 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-
-    body {
-        font: normal 10pt Arial
-
+        #imagem {
+            margin-left: -4.5%;
     }
 
-    #imagem {
-        margin-left: -4.5%;
-
-    }
-        
     section {
         width: 80%;
     }
-  
-}
+
+    #inp {
+        width: 80px;
+    }
+
+    section div p {
+        font-size: 15px;
+
+    }
+    
+    
+    }
 
 @media screen and (max-width: 375px) {
-    body {
-        font: normal 10pt Arial
+  
 
-    }
-        
+       
     section {
         width: 80%;
     }
 
+    #inp {
+        width: 80px;
+    }
+
+    section div p {
+        font-size: 15px;
+
+    }
 
 }
 
 @media screen and (max-width: 425px) {
-    body {
-        font: normal 10pt Arial
-
-    }
-        
     section {
         width: 80%;
     }
 
+    #inp {
+        width: 80px;
+    }
+
+    section p {
+        font-size: 20px;
+
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+  
+    #inp {
+        width: 100px;
+    }
+
+    p {
+        font-size: 30px;
+    }
     
 }
