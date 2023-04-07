@@ -51,8 +51,9 @@ div {
 }
 
 footer {
-    color: white;
+    color: #000;
     text-align: center;
+    font-style: italic;
 }
 
 @media screen and (max-width: 320px) {
