@@ -102,7 +102,17 @@
                 var fsex = document.getElementsByName('radsex')
                 var luz = Number(luz.value)
                 var agua = Number(agua.value)
-                   
+
+                if (document.getElementById("inp").value == "")
+                alert("Você precisa fornecer o valor da conta de luz.");
+
+                if (document.getElementById("inp2").value == "")
+                alert("Você precisa fornecer o valor da conta de água.");
+
+                if (document.getElementById("casa2").value == "")
+                alert("Você precisa fornecer o valor da conta de água.");
+
+                                                
                 if (fsex[0].checked) {
                     var luz = luz / 4
                     var agua = agua / 9
